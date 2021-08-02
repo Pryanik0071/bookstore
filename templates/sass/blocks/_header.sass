@@ -17,28 +17,32 @@
     height: 100%
     object-fit: cover
 
+// Меню навигации
 .nav
   display: flex
   &__list
     padding-left: 0px
     display: flex
   &__item
-    margin-right: 20px
+    margin-right: 22px
     list-style-type: none
+  &__link
+    text-decoration: none
     font-style: normal
     font-weight: 600
     font-size: 16px
     line-height: 22px
     text-align: center
-    color: #183B56
-  
+    color: $dark-blue
+
+// Кнопка Получить в шапке!
 .button
   &-get
-    margin-left: 38px
+    margin-left: 41px
     width: 148px
-    height: 48px
-    padding: 13px 27px
-    border: 2px solid #1565D8
+    height: 51px
+    padding: 14px 27px
+    border: 2px solid $blue
     box-sizing: border-box
     border-radius: 8px
     background-color: transparent
@@ -47,4 +51,12 @@
     font-size: 16px
     line-height: 22px
     text-align: center
-    color: #1565D8
+    color: $blue
+    cursor: pointer
+
+// Мобильное меню
+.menu
+  &-button
+    &__mobile
+      &--hidden
+        display: none
