@@ -3,6 +3,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+  // Название книги
   &__name
     max-width: 444px
     font-family: Roboto Condensed
@@ -22,6 +23,7 @@
     line-height: 24px
     letter-spacing: 0.2px
     margin-bottom: 36px
+  // Описание книги
   &__description
     width: 585px
     font-style: normal
@@ -34,6 +36,7 @@
     position: relative
     width: 488px
     height: 580px
+    // Серый фон под книгой
     &__background
       position: absolute
       top: 0
@@ -46,6 +49,7 @@
       mix-blend-mode: normal
       opacity: 0.1
       z-index: -1
+    // Изображение книги Design Theory
     &__img
       position: absolute
       top: 50%
@@ -54,3 +58,42 @@
       width: 250px
       height: 374px
       z-index: 0
+  &-buttons
+    display: flex
+    align-items: center
+  &__button
+    width: 209px
+    height: 58px
+    border-radius: 8px
+    cursor: pointer
+    overflow: hidden
+    text-overflow: ellipsis
+    font-style: normal
+    font-weight: bold    
+
+.button
+  &__buy
+    &-now
+      height: 100%
+      border: 2px solid transparent
+      padding: 18px 36px
+      background-color: $blue
+      font-size: 16px
+      line-height: 22px
+      color: $white
+      margin-right: 26px
+  &__view
+    &-demo
+      height: 100%
+      border: 2px solid $blue
+      padding-top: 17px
+      padding-bottom: 16px
+      background-color: $white
+      font-size: 18px
+      line-height: 25px
+      color: $blue
+     
+
+
+  // <button class="button__buy-now">Купить сейчас</button>
+  // <button class="button__view-demo">Читать демо</button>
