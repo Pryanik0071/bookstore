@@ -2,11 +2,41 @@
   .container
     max-width: 960px
 
+  .book
+    &__description
+      max-width: 460px
+
 @media (max-width: 992px)
   .container
     max-width: 720px
 
-@media (max-width: 768px)  
+  .book
+    &-image
+      width: 340px
+      height: 480px
+      &__img
+        width: 200px
+        height: 324px
+    &__name
+      max-width: 340px
+      font-size: 32px
+      line-height: 50px
+      margin-bottom: 20px
+    &__description
+      max-width: 370px
+      margin-bottom: 30px
+      font-size: 16px
+    &-buttons
+      justify-content: space-between
+    &__button
+      width: 170px
+      &__buy
+        &-now
+          padding: 18px 20px
+          margin-right: 0px
+    
+
+@media (max-width: 768px)
   .container
     max-width: 560px
     width: 88%
@@ -15,17 +45,23 @@
     &-wrapper
       margin-top: 0px
       padding: 18px 0px
+    &--fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 99
   
   // Ссылки в шапке
   .nav
-    &__mobile
+    &--mobile
       &--hidden
         display: none
     
   // Мобильное меню
   .menu
     &-button
-      &__mobile
+      &--mobile
         &--hidden
           display: flex
           width: 22px
@@ -46,4 +82,8 @@
     &__mobile
       &--visible
         display: block
+      
+  .book
+    margin-top: 100px
+
 // @media (max-width: 576px)
