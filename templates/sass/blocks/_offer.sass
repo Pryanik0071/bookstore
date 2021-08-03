@@ -1,0 +1,103 @@
+.recommendation
+  &__list
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    height: 870px
+    width: 750px
+  &__item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 358px
+    height: 260px
+    border: 1px solid $light2-gray
+    box-sizing: border-box
+    border-radius: 8px
+    list-style-type: none
+    padding: 11px 10px 11px 11px
+  &__img
+    border-radius: 8px
+    width: 160px
+    height: 238px
+    object-fit: cover
+    mix-blend-mode: normal
+  &__info
+    flex-basis: 45%
+  &__title
+    max-width: 156px
+    max-height: 64px
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark-blue
+    margin-bottom: 16px
+    overflow: hidden
+    text-overflow: ellipsis
+  &__section
+    display: block
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark-blue
+    margin-bottom: 24px
+    max-width: 152px
+    max-height: 25px
+    overflow: hidden
+    text-overflow: ellipsis
+  &__button
+    width: 101px
+    height: 36px
+    background: $dark-blue
+    border-radius: 2000px
+    border: none
+    cursor: pointer
+    overflow: hidden
+    text-overflow: ellipsis
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $white
+    padding: 7px 20px
+    margin-right: 20px
+  &__buy
+    display: flex
+    align-items: center
+  &__like
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+
+.offer
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__title
+    margin-bottom: 30px
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    color: $dark-blue
+  &__price
+    display: block
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: $blue
+    text-transform: uppercase
+    margin-bottom: 24px
