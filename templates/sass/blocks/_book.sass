@@ -1,10 +1,11 @@
 .book
+  margin-bottom: 100px
   &-wrapper
     display: flex
     align-items: center
     justify-content: space-between
   // Название книги
-  &__name
+  &__title
     max-width: 444px
     font-family: Roboto Condensed
     font-style: normal
@@ -13,6 +14,8 @@
     line-height: 60px
     letter-spacing: 0.2px
     margin-bottom: 28px
+  &__section
+    display: block
   &__section
     color: $yellow
   &__author
@@ -23,6 +26,7 @@
     line-height: 24px
     letter-spacing: 0.2px
     margin-bottom: 36px
+    text-transform: uppercase
   // Описание книги
   &__description
     max-width: 585px
@@ -67,13 +71,17 @@
     overflow: hidden
     text-overflow: ellipsis
     font-style: normal
-    font-weight: bold    
+    font-weight: bold
+    text-transform: uppercase
+    padding-right: 10px
+    padding-left: 10px    
     // Купить сейчас
     &__buy
       &-now
         height: 100%
         border: 2px solid transparent
-        padding: 18px 36px
+        padding-top: 18px 
+        padding-bottom: 18px
         background-color: $blue
         font-size: 16px
         line-height: 22px
