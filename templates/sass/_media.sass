@@ -67,7 +67,7 @@
     &-wrapper
       width: 350px
     &__title
-      width: 170px
+      max-width: 170px
     
 @media (max-width: 768px)
   .container
@@ -157,20 +157,13 @@
       text-align: center
       margin-bottom: 17px
     &-buttons
-      flex-direction: column
-    &__button
-      padding: 7px 10px
-      font-size: 16px
-      line-height: 22px
-      &__buy
-        &-now
-          margin-bottom: 10px
+      width: 70%
     &-image
-      width: 280px
-      height: 333px
+      width: 560px
+      height: 667px
       &__img
-        width: 144px
-        height: 215px
+        width: 350px
+        height: 522px
 
   .offer
     &-wrapper
@@ -184,26 +177,24 @@
         margin-bottom: 36px
     &__price
       text-align: center
-      font-size: 16px
-      line-height: 20px
       margin-bottom: 20px
       &-top
         margin-bottom: 14px
         text-align: left
     &__buy
       justify-content: center
+      &-top
+        justify-content: start
     &-more
       height: 48px
-      &__button
-        text-transform: none
 
   .recommendation
     width: 100%
     margin-bottom: 56px
     &__item
       width: 100%
-      height: 450px
-      padding: 0px 18px 32px 18px
+      height: 420px
+      padding: 0px 18px
       flex-direction: column
       margin-top: 28px
       &:nth-child(n+2)
@@ -235,28 +226,62 @@
       padding-top: 26px
       padding-left: 15px
     &__img
-      width: 96px
-      height: 142px
+      width: 136px
+      height: 200px
       margin-right: 14px
     &__item
-      height: 142px
+      height: 200px
       justify-content: start
     &__title
-      font-family: Roboto Condensed
-      max-width: 110px
-      max-height: 48px
-      font-size: 16px
-      line-height: 24px
-      margin-bottom: 12px
+      max-width: 350px
     &__link
       margin-top: 6px
       padding-top: 20px
       padding-bottom: 20px
-
+  
 @media (max-width: 576px)
+  .book
+    &-image
+      width: 280px
+      height: 333px
+      &__img
+        width: 144px
+        height: 215px
+    &-buttons
+      flex-direction: column
+    &__button
+      padding: 7px 10px
+      font-size: 16px
+      line-height: 22px
+      &__buy
+        &-now
+          margin-bottom: 10px
+
   .recommendation
     &__item
       height: 312px
+      padding: 0px 18px 32px 18px
     &__img
       width: 96px
       height: 137px
+
+  .top
+    &__item
+      height: 142px
+    &__title
+      max-width: 110px
+      font-family: Roboto Condensed
+      max-height: 48px
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 12px
+    &__img
+      width: 96px
+      height: 142px
+    &__list
+      margin-bottom: 13px    
+
+  .offer
+    &-more
+      &__button
+        text-transform: none
