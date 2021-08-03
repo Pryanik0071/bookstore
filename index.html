@@ -38,7 +38,7 @@
               <!-- /.nav__list -->
             </nav>
             <!-- /.nav-wrapper -->
-            <button class="button-get">Получить</button>
+            <button data-toggle="modal" class="button-get">Получить</button>
           </div>
           <!-- /.nav -->
           <button class="menu-button menu-button--mobile--hidden">
@@ -88,10 +88,16 @@
               стратегиями ценообразования на творческую работу.
             </p>
             <div class="book-buttons">
-              <button class="book__button book__button__buy-now">
+              <button
+                data-toggle="modal"
+                class="book__button book__button__buy-now"
+              >
                 Купить сейчас
               </button>
-              <button class="book__button book__button__view-demo">
+              <button
+                data-toggle="modal"
+                class="book__button book__button__view-demo"
+              >
                 Читать демо
               </button>
             </div>
@@ -134,7 +140,9 @@
                   <span class="recommendation__section">Art & Design</span>
                   <span class="offer__price">$25.00</span>
                   <div class="offer__buy">
-                    <button class="offer__button">Купить</button>
+                    <button data-toggle="modal" class="offer__button">
+                      Купить
+                    </button>
                     <svg
                       width="22"
                       height="36"
@@ -166,7 +174,9 @@
                   <span class="recommendation__section">Education</span>
                   <span class="offer__price">$28.00</span>
                   <div class="offer__buy">
-                    <button class="offer__button">Купить</button>
+                    <button data-toggle="modal" class="offer__button">
+                      Купить
+                    </button>
                     <svg
                       width="22"
                       height="36"
@@ -195,7 +205,9 @@
                   <span class="recommendation__section">Novel</span>
                   <span class="offer__price">$19.50</span>
                   <div class="offer__buy">
-                    <button class="offer__button">Купить</button>
+                    <button data-toggle="modal" class="offer__button">
+                      Купить
+                    </button>
                     <svg
                       width="22"
                       height="36"
@@ -227,7 +239,9 @@
                   <span class="recommendation__section">Novel</span>
                   <span class="offer__price">$20.00</span>
                   <div class="offer__buy">
-                    <button class="offer__button">Купить</button>
+                    <button data-toggle="modal" class="offer__button">
+                      Купить
+                    </button>
                     <svg
                       width="22"
                       height="36"
@@ -259,7 +273,9 @@
                   <span class="recommendation__section">Business</span>
                   <span class="offer__price">$23.00</span>
                   <div class="offer__buy">
-                    <button class="offer__button">Купить</button>
+                    <button data-toggle="modal" class="offer__button">
+                      Купить
+                    </button>
                     <svg
                       width="22"
                       height="36"
@@ -291,7 +307,9 @@
                   <span class="recommendation__section">Motivation</span>
                   <span class="offer__price">$23.00</span>
                   <div class="offer__buy">
-                    <button class="offer__button">Купить</button>
+                    <button data-toggle="modal" class="offer__button">
+                      Купить
+                    </button>
                     <svg
                       width="22"
                       height="36"
@@ -331,7 +349,9 @@
                     <h3 class="top__title">Sprint : Solve, Test in 5 Days</h3>
                     <span class="offer__price offer__price-top">$23.00</span>
                     <div class="offer__buy offer__buy-top">
-                      <button class="offer__button">Купить</button>
+                      <button data-toggle="modal" class="offer__button">
+                        Купить
+                      </button>
                     </div>
                   </div>
                   <!-- /.top_info -->
@@ -346,7 +366,9 @@
                     <h3 class="top__title">Hacking Growth Break Problem</h3>
                     <span class="offer__price offer__price-top">$23.00</span>
                     <div class="offer__buy offer__buy-top">
-                      <button class="offer__button">Купить</button>
+                      <button data-toggle="modal" class="offer__button">
+                        Купить
+                      </button>
                     </div>
                   </div>
                   <!-- /.top_info -->
@@ -361,7 +383,9 @@
                     <h3 class="top__title">Very Nice a Novel by Mercy</h3>
                     <span class="offer__price offer__price-top">$23.00</span>
                     <div class="offer__buy offer__buy-top">
-                      <button class="offer__button">Купить</button>
+                      <button data-toggle="modal" class="offer__button">
+                        Купить
+                      </button>
                     </div>
                   </div>
                   <!-- /.top_info -->
@@ -376,7 +400,9 @@
                     <h3 class="top__title">Hooked : How to Build Products</h3>
                     <span class="offer__price offer__price-top">$23.00</span>
                     <div class="offer__buy offer__buy-top">
-                      <button class="offer__button">Купить</button>
+                      <button data-toggle="modal" class="offer__button">
+                        Купить
+                      </button>
                     </div>
                   </div>
                   <!-- /.top_info -->
@@ -394,7 +420,67 @@
       </div>
     </section>
     <!-- /.offer -->
+
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <svg
+            width="17"
+            height="16"
+            viewBox="0 0 17 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.4144 7.99995L16.6575 1.76968C17.0638 1.36443 17.0638 0.709193 16.6575 0.30394C16.2514 -0.101313 15.5948 -0.101313 15.1887 0.30394L8.94539 6.53421L2.70225 0.30394C2.29595 -0.101313 1.63953 -0.101313 1.23343 0.30394C0.827138 0.709193 0.827138 1.36443 1.23343 1.76968L7.47657 7.99995L1.23343 14.2302C0.827138 14.6355 0.827138 15.2907 1.23343 15.696C1.43582 15.8981 1.70192 15.9997 1.96784 15.9997C2.23376 15.9997 2.49967 15.8981 2.70225 15.696L8.94539 9.4657L15.1887 15.696C15.3913 15.8981 15.6572 15.9997 15.9231 15.9997C16.189 15.9997 16.455 15.8981 16.6575 15.696C17.0638 15.2907 17.0638 14.6355 16.6575 14.2302L10.4144 7.99995Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name-modal"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone-modal"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email-modal"
+            required
+          />
+          <textarea
+            class="modal__message"
+            placeholder="Message"
+            name="message-modal"
+          ></textarea>
+          <div class="modal__send-wrapper">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+          <!-- /.modal__send-wrapper -->
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </section>
+    <!-- /.modal -->
+
     <script src="templates/js/jquery-3.6.0.min.js"></script>
+    <script src="templates/js/jquery.validate.min.js"></script>
+    <script src="templates/js/jquery.mask.min.js"></script>
     <script src="templates/js/main.js"></script>
   </body>
 </html>
