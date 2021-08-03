@@ -1,6 +1,5 @@
 .recommendation
   &__list
-    height: 870px
     width: 750px
     margin: 0
     padding: 0
@@ -8,6 +7,7 @@
     justify-content: space-between
     flex-wrap: wrap
     margin-bottom: -5px
+    overflow: hidden
   &__item
     display: flex
     justify-content: space-between
@@ -15,15 +15,14 @@
     width: 358px
     height: 260px
     border: 1px solid $light2-gray
-    box-sizing: border-box
     border-radius: 8px
     list-style-type: none
     padding: 11px 10px 11px 11px
+    margin-bottom: 32px
   &__img
     border-radius: 8px
     width: 160px
     height: 238px
-    object-fit: cover
     mix-blend-mode: normal
   &__info
     flex-basis: 45%
@@ -52,25 +51,6 @@
     max-height: 25px
     overflow: hidden
     text-overflow: ellipsis
-  &__button
-    width: 101px
-    height: 36px
-    background: $dark-blue
-    border-radius: 2000px
-    border: none
-    cursor: pointer
-    overflow: hidden
-    text-overflow: ellipsis
-    font-style: normal
-    font-weight: bold
-    font-size: 16px
-    line-height: 22px
-    color: $white
-    padding: 7px 20px
-    margin-right: 20px
-  &__buy
-    display: flex
-    align-items: center
   &__like
     text-align: center
     display: flex
@@ -140,3 +120,81 @@
       background-color: $blue
       mix-blend-mode: normal
       opacity: 0.1
+  &__button
+    width: 101px
+    height: 36px
+    background: $dark-blue
+    border-radius: 2000px
+    border: none
+    cursor: pointer
+    overflow: hidden
+    text-overflow: ellipsis
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $white
+    padding: 7px 20px
+    margin-right: 20px
+  &__buy
+    display: flex
+    align-items: center
+
+.top
+  &-wrapper
+    background: #F8F9FA
+    border-radius: 8px
+    width: 360px
+    padding: 25px 10px 0px 25px
+  &__list
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: -6px
+    overflow: hidden
+  &__item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 312px
+    height: 178px
+    border-radius: 8px
+    list-style-type: none
+    margin-bottom: 34px
+  &__img
+    border-radius: 8px
+    width: 120px
+    height: 178px
+    mix-blend-mode: normal
+  &__title
+    max-width: 166px
+    max-height: 64px
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark-blue
+    overflow: hidden
+    text-overflow: ellipsis
+    margin-bottom: 15px
+  &__link
+    border-top: solid
+    border-color: $light2-gray
+    border-width: 1px
+    display: block
+    padding-top: 29px
+    padding-bottom: 26px
+    text-decoration: none
+    text-transform: uppercase
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $blue
