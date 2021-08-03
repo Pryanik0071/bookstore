@@ -1,12 +1,13 @@
 .recommendation
   &__list
+    height: 870px
+    width: 750px
     margin: 0
     padding: 0
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-    height: 870px
-    width: 750px
+    margin-bottom: -5px
   &__item
     display: flex
     justify-content: space-between
@@ -77,6 +78,7 @@
     justify-content: center
 
 .offer
+  margin-bottom: 79px
   &-wrapper
     display: flex
     align-items: center
@@ -101,3 +103,40 @@
     color: $blue
     text-transform: uppercase
     margin-bottom: 24px
+  &-more
+    position: relative
+    width: 100%
+    height: 72px
+    border-radius: 8px
+    overflow: hidden
+    text-align: center
+    cursor: pointer
+    color: $blue
+    &__button
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      position: absolute
+      text-transform: uppercase
+      background: transparent
+      border: none
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+      color: inherit
+      padding: 0
+      cursor: inherit
+    &__background
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background-color: $blue
+      mix-blend-mode: normal
+      opacity: 0.1
