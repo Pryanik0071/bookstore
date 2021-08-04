@@ -8,6 +8,7 @@
     padding: 0
     margin: 0
   &__item
+    position: relative
     list-style-type: none
     display: flex
     flex-direction: column
@@ -18,7 +19,7 @@
     box-sizing: border-box
     border-radius: 8px
     padding: 40px 10px 30px 10px
-    justify-content: space-between
+    justify-content: start
   &__img
     position: absolute
     width: 42px
@@ -47,6 +48,8 @@
     overflow: hidden
     text-overflow: ellipsis
   &__section
+    position: absolute
+    bottom: 30px
     max-width: 100%
     font-family: Open Sans
     font-style: normal
@@ -87,3 +90,11 @@
 .container
   &-category
     position: relative
+  
+.swiper
+  &-button
+    &-disabled
+      cursor: default
+      box-shadow: none
+      border: 1px solid $dark-blue
+      opacity: 0.5

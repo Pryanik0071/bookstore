@@ -80,6 +80,9 @@ $(document).ready(function () {
       prevEl: ".category-button--prev",
     },
 
+    // allowSlideNext: false,
+    // allowSlidePrev: false,
+
     // Keyboard control
     keyboard: {
       enabled: true,
