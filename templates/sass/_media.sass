@@ -45,6 +45,10 @@
       font-size: 13px
       max-height: 23px
 
+  .unreleased
+    &-slide
+      margin-right: 48px
+
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -94,6 +98,10 @@
       font-size: 11px
       line-height: 20px
       max-height: 22px
+
+  .unreleased
+    &-slide
+      margin-right: 54px
     
 @media (max-width: 768px)
   .container
@@ -293,8 +301,14 @@
       &--prev
         left: 40%
         transform: translateX(-40%)
-        
 
+  .unreleased
+    &-slide
+      width: 206px
+      margin-right: 26,4%
+    &__img
+      height: 300px
+        
 @media (max-width: 576px)
   .book
     &-image
@@ -347,7 +361,6 @@
       max-width: 100%
       width: 91%
 
-
   .category
     &__item
       min-width: 140px
@@ -383,4 +396,30 @@
         height: 36px
         margin-bottom: 20px
   
-  
+  .unreleased
+    margin-top: 140px
+    padding-top: 48px
+    padding-bottom: 112px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 41px
+      text-align: center
+    &-slide
+      width: 100%
+      margin-right: 0px
+      text-align: center
+    &__img
+      width: 206px
+      height: 300px
+    &-button
+      top: auto
+      bottom: -90px
+      width: 50px
+      height: 50px
+      background-size: 48px
+      &--next
+        right: 30%
+      &--prev
+        left: 30%
+          

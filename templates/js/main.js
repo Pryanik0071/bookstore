@@ -89,4 +89,20 @@ $(document).ready(function () {
       enabled: true,
     },
   });
+
+  // Слайдер Неизданного
+  const swiperUnreleased = new Swiper(".unreleased-container", {
+    slidesPerView: "auto",
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".unreleased-button--next",
+      prevEl: ".unreleased-button--prev",
+    },
+
+    // Keyboard control
+    keyboard: {
+      enabled: true,
+    },
+  });
 });
