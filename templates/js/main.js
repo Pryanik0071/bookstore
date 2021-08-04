@@ -69,4 +69,20 @@ $(document).ready(function () {
       },
     });
   });
+
+  // Слайдер Category
+  const swiperCategory = new Swiper(".category-container", {
+    // Optional parameters
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".category-button--next",
+      prevEl: ".category-button--prev",
+    },
+
+    // Keyboard control
+    keyboard: {
+      enabled: true,
+    },
+  });
 });

@@ -1,0 +1,80 @@
+.category
+  &-container
+    max-width: 1140px
+  &__list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0
+    margin: 0
+  &__item
+    list-style-type: none
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 265px
+    height: 240px
+    border: 1px solid $light2-gray
+    box-sizing: border-box
+    border-radius: 8px
+    padding-top: 40px
+    padding-left: 10px
+    padding-right: 10px
+  &__img
+    position: absolute
+    width: 42px
+    height: 40px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &-wrapper
+      position: relative
+      width: 64px
+      height: 64px
+      border-radius: 50%
+      background-color: $white-blue
+      margin-bottom: 40px
+  &__title
+    margin-bottom: 12px
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark-blue
+  &__section
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark-gray
+
+.category
+  &-button
+    padding: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 56px
+    height: 56px
+    border: none
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+    border-radius: 2000px
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 14px
+    background-color: $white
+    z-index: 101
+    &--next
+      right: -28px
+      background-image: url(../img/arrow-next.svg)
+    &--prev
+      left: -28px
+      background-image: url(../img/arrow-prev.svg)
+
+.container
+  &-category
+    position: relative
