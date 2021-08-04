@@ -80,8 +80,9 @@ $(document).ready(function () {
       prevEl: ".category-button--prev",
     },
 
-    // allowSlideNext: false,
-    // allowSlidePrev: false,
+    longSwipes: true,
+    // longSwipesMs: 1500,
+    // longSwipesRatio: 1,
 
     // Keyboard control
     keyboard: {
