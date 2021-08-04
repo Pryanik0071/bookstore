@@ -36,6 +36,15 @@
       &__button
         width: 200px
 
+  .category
+    &__item
+      width: 225px
+    &__title
+      font-size: 18px
+    &__section
+      font-size: 13px
+      max-height: 23px
+
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -73,6 +82,18 @@
       width: 350px
     &__title
       max-width: 170px
+
+  .category
+    &__item
+      width: 175px
+    &__title
+      font-size: 14px
+      line-height: 20px
+      max-height: 22px
+    &__section
+      font-size: 11px
+      line-height: 20px
+      max-height: 22px
     
 @media (max-width: 768px)
   .container
@@ -244,6 +265,31 @@
       padding-top: 20px
       padding-bottom: 20px
   
+
+  .category
+    &__list
+      flex-wrap: wrap
+    &__item
+      width: 235px
+      height: 235px
+      margin-bottom: 10px
+    &__title
+      font-size: 18px
+      max-height: 32px
+    &__section
+      font-size: 13px
+      max-height: 23px
+    &-button
+      top: 100%
+      bottom: 0 
+      &--next
+        left: 55%
+        transform: translateX(-40%)
+      &--prev
+        left: 40%
+        transform: translateX(-40%)
+        
+
 @media (max-width: 576px)
   .book
     &-image
@@ -290,3 +336,36 @@
     &-more
       &__button
         text-transform: none
+
+  .category
+    &__item
+      min-width: 140px
+      min-height: 182px
+      padding-top: 20px
+      padding-bottom: 20px
+      flex-basis: 45%
+    &__title
+      font-size: 16px
+      line-height: 20px
+      max-height: 42px
+    &__section
+      font-size: 12px
+      line-height: 20px
+    &-button
+      top: 100%
+      bottom: 0 
+      width: 48px
+      height: 48px
+      &--next
+        left: 55%
+        transform: translateX(-40%)
+      &--prev
+        left: 35%
+        transform: translateX(-40%)
+    &__img
+      width: 23px
+      height: 23px
+      &-wrapper
+        width: 36px
+        height: 36px
+        margin-bottom: 20px
