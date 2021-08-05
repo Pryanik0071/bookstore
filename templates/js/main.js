@@ -5,10 +5,11 @@ $(document).ready(function () {
     document
       .querySelector(".nav--mobile--hidden")
       .classList.toggle("nav__mobile--visible");
+    document.querySelector("body").setAttribute("style", "overflow: hidden");
   });
 
   // Like в рекомендация
-  document.querySelectorAll("#icon-like").forEach((button) => {
+  document.querySelectorAll(".icon-like").forEach((button) => {
     button.addEventListener("click", (e) => {
       if (button.getAttribute("fill") === "#959EAD") {
         button.setAttribute("fill", "#DC143C");
