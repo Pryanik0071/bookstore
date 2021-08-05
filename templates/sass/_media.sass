@@ -348,6 +348,81 @@
         width: 48px
         height: 48px
         
+  .story
+    padding-top: 44px
+    padding-bottom: 43px
+    &-wrapper
+      max-width: 510px
+
+  .story
+    &__text
+      flex-direction: column
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      margin-bottom: 24px
+    &__description
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      margin-right: 0px
+      margin-bottom: 35px
+      max-width: 100%
+    &__video
+      &-main
+        margin-top: 0px
+        height: 210px
+        margin-bottom: 18px
+      &-one
+        width: 100%
+        height: 200px
+        margin-bottom: 16px
+      &-two
+        width: 100%
+        height: 200px
+        margin-bottom: 16px
+
+  .video
+    &-play
+      &-button
+        width: 56px
+        height: 56px
+      &-white
+        width: 21px
+        height: 27px
+        &-blue 
+          width: 17px
+          height: 22px
+    &-title
+      font-size: 16px
+      line-height: 20px
+    &-one
+      width: 240px
+    &-two
+      width: 240px
+
+  .video    
+    &-head
+      grid-template-columns: 100%
+      grid-template-rows: 33% 33% 33%
+      row-gap: 6px
+    &-title
+      font-size: 16px
+      line-height: 20px
+      justify-self: center
+    &-description
+      font-size: 12px
+      line-height: 20px
+      justify-self: center
+      grid-row: 2
+      grid-column: 1
+    &-like
+      cursor: pointer
+      grid-row: 3
+      grid-column: 1
+      justify-self: center
+
 @media (max-width: 576px)
   .book
     &-image
@@ -458,59 +533,30 @@
       height: 300px
           
   .story
-    padding-top: 44px
-    padding-bottom: 43px
     &-container
-      width: 93.75%
-      max-width: 100%
+      width: 300px
     &-wrapper
-      width: 100%
+      max-width: 300px
 
   .story
-    &__text
-      flex-direction: column
-    &__title
-      font-size: 28px
-      line-height: 36px
-      text-align: center
-      margin-bottom: 24px
-    &__description
-      font-size: 18px
-      line-height: 25px
-      text-align: center
-      margin-right: 0px
-      margin-bottom: 35px
     &__video
       &-main
-        margin-top: 0px
-        height: 210px
         background-image: url(../img/video-main-mobile.jpg)
-        margin-bottom: 20px
       &-one
-        width: 140px
         height: 138px
         background-image: url(../img/video-other-one-mobile.png)
-        margin-bottom: 16px
       &-two
-        width: 140px
         height: 138px
         background-image: url(../img/video-other-two-mobile.png)
-        margin-bottom: 16px
 
   .video
-    &-play
-      &-button
-        width: 56px
-        height: 56px
-      &-white
-        width: 21px
-        height: 27px
-        &-blue 
-          width: 17px
-          height: 22px
-    &-head
-      position: relative
-      
-    &-title
-      font-size: 16px
-      line-height: 20px
+    &-one
+      width: 140px
+    &-two
+      width: 140px
+
+  .video    
+    &-like
+      margin-top: 5px
+      width: 10px
+      height: 14px
