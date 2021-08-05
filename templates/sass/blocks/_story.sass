@@ -37,12 +37,13 @@
       position: relative
       margin-top: 22px
       margin-bottom: 30px
-      width: 1005px
+      width: 100%
       height: 380px
       background-image: url(../img/video-main.png)
       background-repeat: no-repeat
       background-position: center
       background-color: transparent
+      object-fit: cover
 
 .video
   &-play
@@ -57,16 +58,20 @@
       border-radius: 50%   
       background-color: $white
       cursor: pointer
-    &-blue 
-      position: absolute
-      top: 50%
-      right: 50%
-      transform: translate(50%, -50%)
     &-white 
       position: absolute
+      width: 30px
+      height: 35px 
       top: 50%
       right: 50%
       transform: translate(50%, -50%)
+      &-blue
+        width: 30px
+        height: 35px 
+        position: absolute
+        top: 50%
+        right: 50%
+        transform: translate(50%, -50%)
 
 .other
   &-video
@@ -84,6 +89,7 @@
       background-position: center
       background-color: transparent
       margin-bottom: 22px
+      object-fit: cover
     &-two
       position: relative
       width: 315px
@@ -93,6 +99,7 @@
       background-position: center
       background-color: transparent
       margin-bottom: 22px
+      object-fit: cover
     &-three
       position: relative
       width: 315px
@@ -102,6 +109,7 @@
       background-position: center
       background-color: transparent
       margin-bottom: 22px
+      object-fit: cover
 
 .video    
   &-head

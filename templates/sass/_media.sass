@@ -46,6 +46,21 @@
       &--last
         margin-right: 0px
 
+  .story
+    &-wrapper
+      width: 900px
+
+  .story
+    &__video
+      &-one
+        width: 280px
+    &__video
+      &-two
+        width: 280px
+    &__video
+      &-three
+        width: 280px
+
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -92,6 +107,22 @@
       &--last
         margin-right: 0px
     
+  .story
+    &-wrapper
+      width: 660px
+
+  .story
+    &__video
+      &-one
+        width: 315px
+    &__video
+      &-two
+        width: 315px
+  
+  .video
+    &-three
+      display: none
+
 @media (max-width: 768px)
   .container
     max-width: 560px
@@ -426,3 +457,60 @@
       width: 206px
       height: 300px
           
+  .story
+    padding-top: 44px
+    padding-bottom: 43px
+    &-container
+      width: 93.75%
+      max-width: 100%
+    &-wrapper
+      width: 100%
+
+  .story
+    &__text
+      flex-direction: column
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      margin-bottom: 24px
+    &__description
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      margin-right: 0px
+      margin-bottom: 35px
+    &__video
+      &-main
+        margin-top: 0px
+        height: 210px
+        background-image: url(../img/video-main-mobile.jpg)
+        margin-bottom: 20px
+      &-one
+        width: 140px
+        height: 138px
+        background-image: url(../img/video-other-one-mobile.png)
+        margin-bottom: 16px
+      &-two
+        width: 140px
+        height: 138px
+        background-image: url(../img/video-other-two-mobile.png)
+        margin-bottom: 16px
+
+  .video
+    &-play
+      &-button
+        width: 56px
+        height: 56px
+      &-white
+        width: 21px
+        height: 27px
+        &-blue 
+          width: 17px
+          height: 22px
+    &-head
+      position: relative
+      
+    &-title
+      font-size: 16px
+      line-height: 20px

@@ -170,7 +170,7 @@ $(document).ready(function () {
   // Видео 1
   $(".play-video-1").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("video-one", {
-      videoId: "87by1DjfxLw",
+      videoId: "qJqHjDsfKP0",
       events: {
         onReady: videoPlay,
       },
