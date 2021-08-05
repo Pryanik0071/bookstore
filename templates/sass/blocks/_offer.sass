@@ -6,7 +6,6 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-    margin-bottom: -5px
     overflow: hidden
   &__item
     display: flex
@@ -58,6 +57,7 @@
     justify-content: center
 
 .offer
+  padding-top: 50px
   padding-bottom: 79px
   &-wrapper
     display: flex
@@ -92,6 +92,7 @@
     text-align: center
     cursor: pointer
     color: $blue
+    margin-top: 27px
     &__button
       top: 50%
       left: 50%
@@ -205,4 +206,7 @@
       border: 1px solid $light2-gray
       margin-bottom: 60px
 
-.icon-like
+.recommendation
+  &__item
+    &:nth-child(n+5)
+      margin-bottom: 0px
