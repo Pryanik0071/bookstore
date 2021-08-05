@@ -19,6 +19,19 @@ $(document).ready(function () {
     });
   });
 
+  // Like в video
+  document.querySelectorAll(".video-like").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      if (button.querySelector("path").getAttribute("fill") === "#1565D8") {
+        button.querySelector("path").setAttribute("fill", "#DC143C");
+      } else if (
+        button.querySelector("path").getAttribute("fill") === "#DC143C"
+      ) {
+        button.querySelector("path").setAttribute("fill", "#1565D8");
+      }
+    });
+  });
+
   // Modal Window
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
