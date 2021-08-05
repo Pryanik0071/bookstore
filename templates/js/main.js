@@ -5,7 +5,7 @@ $(document).ready(function () {
     document
       .querySelector(".nav--mobile--hidden")
       .classList.toggle("nav__mobile--visible");
-    document.querySelector("body").setAttribute("style", "overflow: hidden");
+    document.querySelector("body").classList.toggle("body-overflow-hidden");
   });
 
   // Like в рекомендация
