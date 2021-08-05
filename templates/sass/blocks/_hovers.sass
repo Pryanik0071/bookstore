@@ -55,3 +55,14 @@
   .icon-like
     &:hover
       fill: $yellow
+
+  .category
+    &-button
+      &:active
+        box-shadow: none
+        
+  .category-button:hover .category-button__img
+    fill: $crimson
+
+  .unreleased-button[aria-disabled="false"]:hover .unreleased-button__img
+    stroke: $crimson

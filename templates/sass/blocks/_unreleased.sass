@@ -2,6 +2,8 @@
   background-color: $dark-blue
   padding-top: 62px
   padding-bottom: 80px
+  &-container
+    margin-top: 60px
   &-wrap
     position: relative
   &-slide
@@ -17,7 +19,6 @@
     line-height: 48px
     letter-spacing: 0.2px
     color: $white
-    margin-bottom: 60px
   &__img
     width: 100%
     height: 298px
@@ -31,8 +32,6 @@
     position: absolute
     top: 0
     right: 0
-    width: 56px
-    height: 56px
     border: none
     cursor: pointer
     background-repeat: no-repeat
@@ -40,11 +39,11 @@
     background-color: transparent
     z-index: 90
     &--next
-      background-image: url(../img/arrow-unreleased.svg)
+      // background-image: url(../img/arrow-unreleased.svg)
     &--prev
       right: 80px
-      background-image: url(../img/arrow-unreleased.svg)
-      transform: scale(-1)
+      // background-image: url(../img/arrow-unreleased.svg)
+      // transform: scale(-1)
 
 .unreleased-button.swiper-button-disabled
   cursor: default
