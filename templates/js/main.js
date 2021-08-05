@@ -7,6 +7,17 @@ $(document).ready(function () {
       .classList.toggle("nav__mobile--visible");
   });
 
+  // Like в рекомендация
+  document.querySelectorAll("#icon-like").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      if (button.getAttribute("fill") === "#959EAD") {
+        button.setAttribute("fill", "#DC143C");
+      } else if (button.getAttribute("fill") === "#DC143C") {
+        button.setAttribute("fill", "#959EAD");
+      }
+    });
+  });
+
   // Modal Window
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
