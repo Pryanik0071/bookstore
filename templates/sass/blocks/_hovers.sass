@@ -3,6 +3,8 @@
     &__link
       &:hover
         color: $crimson
+      &:active 
+        color: $dark-blue
 
   .button
     &-get
@@ -16,13 +18,15 @@
         &-now
           &:hover
             background-color: $yellow
-          &:click
-            background-color: $crimson
       &__view
         &-demo
           &:hover
             border: 2px solid $yellow
             color: $yellow
+          &:active
+            border-color: $blue
+            background-color: $blue
+            color: $white
             
   .recommendation
     &__item

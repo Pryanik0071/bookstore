@@ -81,13 +81,6 @@ $(document).ready(function () {
     },
 
     longSwipes: true,
-    // longSwipesMs: 1500,
-    // longSwipesRatio: 1,
-
-    // Keyboard control
-    keyboard: {
-      enabled: true,
-    },
   });
 
   // Слайдер Неизданного
