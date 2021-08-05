@@ -138,4 +138,49 @@ $(document).ready(function () {
       enabled: true,
     },
   });
+
+  // Главное видео
+  $(".video-play-button").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("main-player", {
+      videoId: "87by1DjfxLw",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+
+  function videoPlay(event) {
+    event.target.playVideo();
+    event.target.setVolume(10);
+  }
+
+  // Видео 1
+  $(".play-video-1").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-one", {
+      videoId: "87by1DjfxLw",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+
+  // Видео 2
+  $(".play-video-2").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-two", {
+      videoId: "87by1DjfxLw",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+
+  // Видео 3
+  $(".play-video-3").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-three", {
+      videoId: "87by1DjfxLw",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
 });
