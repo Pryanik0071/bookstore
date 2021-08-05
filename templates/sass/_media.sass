@@ -126,7 +126,7 @@
       &--hidden
         display: none
     
-  // Мобильное меню
+  // Кнопка перехода в меню
   .menu
     &-button
       &--mobile
@@ -149,20 +149,25 @@
   .nav
     &__mobile
       &--visible
-        display: block
-    &-menu
-      position: fixed
-      top: 64px
-      right: 0
-      left: 0
-      bottom: 0
-      background-color: $light-gray
+        display: flex
+        position: fixed
+        top: 64px
+        right: 0
+        left: 0
+        bottom: 0
+        flex-direction: column
+        align-items: center
+        background-color: $gray-main      
     &__list
       flex-direction: column
       margin-top: 30px
     &__item
       margin-bottom: 40px
       margin-right: 0
+
+  .button
+    &-get
+      margin-left: 0px
       
   .book
     margin-top: 100px

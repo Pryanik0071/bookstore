@@ -3,7 +3,7 @@ $(document).ready(function () {
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
     document
-      .querySelector(".nav-menu")
+      .querySelector(".nav--mobile--hidden")
       .classList.toggle("nav__mobile--visible");
   });
 
