@@ -350,7 +350,7 @@
         
   .story
     padding-top: 44px
-    padding-bottom: 43px
+    padding-bottom: 48px
     &-wrapper
       max-width: 510px
 
@@ -422,6 +422,12 @@
       grid-row: 3
       grid-column: 1
       justify-self: center
+
+  .partners
+    &__item
+      flex-basis: 30%
+      &:nth-child(n+7)
+        display: none
 
 @media (max-width: 576px)
   .book
@@ -560,3 +566,34 @@
       margin-top: 5px
       width: 10px
       height: 14px
+
+  .partners
+    padding-top: 37px
+    padding-bottom: 32px
+    &__list
+      margin-top: 30px
+    &__title
+      line-height: 30px
+      max-width: 280px
+      margin: auto
+    &__item
+      flex-basis: 50%
+      margin-bottom: 20px
+    &__slack
+      width: 99px
+      height: 29px
+    &__netflix
+      width: 86px
+      height: 23px
+    &__fitbit
+      width: 87px
+      height: 23px
+    &__google
+      width: 86px
+      height: 29px
+    &__airbnb
+      width: 86px
+      height: 27px
+    &__uber
+      width: 87px
+      height: 19px
