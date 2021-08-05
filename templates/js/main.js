@@ -84,6 +84,8 @@ $(document).ready(function () {
   // Слайдер Category
   const swiperCategory = new Swiper(".category-container", {
     // Optional parameters
+    slidesPerView: "auto",
+    slidesPerColumnFill: "row",
 
     // Navigation arrows
     navigation: {
@@ -91,7 +93,33 @@ $(document).ready(function () {
       prevEl: ".category-button--prev",
     },
 
-    longSwipes: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        spaceBetween: 10,
+      },
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 2,
+        slidesPerColumn: 1,
+        spaceBetween: 25,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 45,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 29,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 26,
+      },
+    },
   });
 
   // Слайдер Неизданного
