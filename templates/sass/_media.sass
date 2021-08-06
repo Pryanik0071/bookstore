@@ -61,6 +61,18 @@
       &-three
         width: 280px
 
+  .blog
+    &-wrapper
+      grid-template-columns: 475px 1fr
+      column-gap: 15px
+    &-other
+      &__info
+        max-width: 180px
+      &__img
+        margin-right: 15px
+    &__all
+      margin-right: 35px
+
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -122,6 +134,41 @@
   .video
     &-three
       display: none
+
+  .blog
+    &-wrapper
+      grid-template-columns: 375px 1fr
+      column-gap: 15px
+    &__all
+      justify-self: center
+      margin-right: 0px
+    &-main
+      &__img
+        height: 270px
+        margin-bottom: 35px
+      &__description
+        max-height: 120px
+    &-other
+      &__item
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20px
+        height: 250px
+        &:last-child
+          margin-bottom: 0px
+          display: none
+        &:nth-child(2)
+          margin-bottom: 0px
+      &__img
+        width: 250px
+        height: 150px
+        margin-right: 0px
+      &__info
+        max-width: 250px
+      &__text, &__date, &__link
+        text-align: left
+      &__list
+        height: 100%  
 
 @media (max-width: 768px)
   .container
@@ -429,6 +476,78 @@
       &:nth-child(n+7)
         display: none
 
+  .blog
+    padding-top: 56px
+    padding-bottom: 48px
+    &-wrapper
+      grid-template-columns: 400px
+      grid-template-rows: 5% 41% 46% 8%
+      row-gap: 0px
+      justify-content: center
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+    &__all
+      grid-row: 4
+      grid-column: 1
+      width: 159px
+      height: 44px
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.175px
+    &-main
+      width: 100%
+      grid-row: 2
+      grid-column: 1
+      margin-top: 46px
+      margin-bottom: 35px
+      &__img
+        height: 250px
+        margin-bottom: 19px
+      &__description
+        font-size: 12px
+        line-height: 24px
+        padding: 0 0
+        max-width: 100%
+        max-height: 74px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        padding: 0 0
+        margin-bottom: 10px
+    &-other
+      grid-row: 3
+      grid-column: 1
+      margin-bottom: 41px
+      &__item
+        height: 90px
+        margin-bottom: 31px
+        flex-direction: row
+        &:nth-child(2)
+          margin-bottom: 31px
+        &:last-child
+          display: flex
+      &__img
+        width: 90px
+        height: 90px
+        margin-right: 20px
+      &__info
+        max-width: 170px
+        padding: 0px 0px
+      &__link
+        font-size: 10px
+      &__date
+        font-size: 10px
+        line-height: 20px
+        margin-bottom: 5px
+      &__title
+        font-size: 14px
+        line-height: 20px
+        max-height: 42px
+        margin-bottom: 5px
+
+
 @media (max-width: 576px)
   .book
     &-image
@@ -597,3 +716,74 @@
     &__uber
       width: 87px
       height: 19px
+
+  .blog
+    padding-top: 56px
+    padding-bottom: 48px
+    &-wrapper
+      grid-template-columns: 280px
+      grid-template-rows: 5% 41% 46% 8%
+      row-gap: 0px
+      justify-content: center
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+    &__all
+      grid-row: 4
+      grid-column: 1
+      width: 159px
+      height: 44px
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.175px
+    &-main
+      width: 100%
+      grid-row: 2
+      grid-column: 1
+      margin-top: 46px
+      margin-bottom: 35px
+      &__img
+        height: 120px
+        margin-bottom: 19px
+      &__description
+        font-size: 12px
+        line-height: 24px
+        padding: 0 0
+        max-width: 100%
+        max-height: 74px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        padding: 0 0
+        margin-bottom: 10px
+    &-other
+      grid-row: 3
+      grid-column: 1
+      margin-bottom: 41px
+      &__item
+        height: 90px
+        margin-bottom: 31px
+        flex-direction: row
+        &:nth-child(2)
+          margin-bottom: 31px
+        &:last-child
+          display: flex
+      &__img
+        width: 90px
+        height: 90px
+        margin-right: 20px
+      &__info
+        max-width: 170px
+        padding: 0px 0px
+      &__link
+        font-size: 10px
+      &__date
+        font-size: 10px
+        line-height: 20px
+        margin-bottom: 5px
+      &__title
+        font-size: 14px
+        line-height: 20px
+        max-height: 42px
+        margin-bottom: 5px
