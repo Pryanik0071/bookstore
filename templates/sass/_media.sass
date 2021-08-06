@@ -73,6 +73,12 @@
     &__all
       margin-right: 35px
 
+  .subscribe
+    &__title
+      font-size: 30px
+    &__form
+      width: 390px
+
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -169,6 +175,18 @@
         text-align: left
       &__list
         height: 100%  
+
+  .subscribe
+    &-wrapper
+      padding-left: 30px
+      padding-right: 30px
+    &__title
+      font-size: 25px
+      line-height: 36px
+    &__form
+      width: 390px
+    &__button
+      width: 130px
 
 @media (max-width: 768px)
   .container
@@ -478,7 +496,7 @@
 
   .blog
     padding-top: 56px
-    padding-bottom: 48px
+    padding-bottom: 42px
     &-wrapper
       grid-template-columns: 510px
       grid-template-rows: 5% 50% 40% 5%
@@ -544,6 +562,25 @@
         max-height: 42px
         margin-bottom: 15px
 
+  .subscribe
+    &-container
+      width: 100%
+      max-width: 100%
+    &-wrapper
+      border-radius: 0px
+      flex-direction: column
+      align-items: center
+      padding-bottom: 28px
+      justify-content: start
+    &__title
+      font-size: 25px
+      line-height: 36px
+      margin-bottom: 32px
+      max-width: 90%
+    &__button
+      width: 130px
+    &__form
+      width: 447px
 
 @media (max-width: 576px)
   .book
@@ -758,3 +795,44 @@
         line-height: 20px
         max-height: 42px
         margin-bottom: 5px
+
+  .subscribe
+    &-container
+      height: 306px
+      width: 320px
+      max-width: 320px
+    &-wrapper
+      padding-top: 26px
+      padding-left: 24px
+      padding-right: 24px
+      height: 306px
+      max-height: 306px
+      background-image: url(../img/subscribe-mobile.jpg)
+      align-items: start
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 42px
+      max-width: 210px
+    &__form
+      width: 272px
+      height: 112px
+      margin-top: 0px
+    &__button
+      width: 250px
+      height: 42px
+      top: auto
+      right: 11px
+      bottom: 12px
+    &__input
+      width: 272px
+      height: 112px
+      padding: 2px 10px 55px 48px
+
+  
+  .icon
+    &-email
+      &-send
+        top: 20px
+        left: 20px
+        transform: translateY(0%)
