@@ -480,13 +480,12 @@
     padding-top: 56px
     padding-bottom: 48px
     &-wrapper
-      grid-template-columns: 400px
-      grid-template-rows: 5% 41% 46% 8%
+      grid-template-columns: 510px
+      grid-template-rows: 5% 50% 40% 5%
       row-gap: 0px
+      column-gap: 0px
       justify-content: center
     &__title
-      font-size: 28px
-      line-height: 36px
       text-align: center
     &__all
       grid-row: 4
@@ -503,7 +502,7 @@
       margin-top: 46px
       margin-bottom: 35px
       &__img
-        height: 250px
+        height: 300px
         margin-bottom: 19px
       &__description
         font-size: 12px
@@ -512,16 +511,14 @@
         max-width: 100%
         max-height: 74px
       &__title
-        font-size: 16px
-        line-height: 20px
         padding: 0 0
         margin-bottom: 10px
     &-other
       grid-row: 3
       grid-column: 1
-      margin-bottom: 41px
+      margin-bottom: 25px
       &__item
-        height: 90px
+        height: 110px
         margin-bottom: 31px
         flex-direction: row
         &:nth-child(2)
@@ -529,23 +526,23 @@
         &:last-child
           display: flex
       &__img
-        width: 90px
-        height: 90px
+        width: 200px
+        height: 110px
         margin-right: 20px
       &__info
-        max-width: 170px
+        max-width: 300px
         padding: 0px 0px
       &__link
-        font-size: 10px
+        font-size: 12px
       &__date
-        font-size: 10px
+        font-size: 12px
         line-height: 20px
         margin-bottom: 5px
       &__title
-        font-size: 14px
+        font-size: 16px
         line-height: 20px
         max-height: 42px
-        margin-bottom: 5px
+        margin-bottom: 15px
 
 
 @media (max-width: 576px)
@@ -718,45 +715,19 @@
       height: 19px
 
   .blog
-    padding-top: 56px
-    padding-bottom: 48px
     &-wrapper
       grid-template-columns: 280px
       grid-template-rows: 5% 41% 46% 8%
-      row-gap: 0px
-      justify-content: center
     &__title
       font-size: 28px
       line-height: 36px
       text-align: center
-    &__all
-      grid-row: 4
-      grid-column: 1
-      width: 159px
-      height: 44px
-      font-size: 14px
-      line-height: 20px
-      letter-spacing: 0.175px
     &-main
-      width: 100%
-      grid-row: 2
-      grid-column: 1
-      margin-top: 46px
-      margin-bottom: 35px
       &__img
         height: 120px
-        margin-bottom: 19px
-      &__description
-        font-size: 12px
-        line-height: 24px
-        padding: 0 0
-        max-width: 100%
-        max-height: 74px
       &__title
         font-size: 16px
         line-height: 20px
-        padding: 0 0
-        margin-bottom: 10px
     &-other
       grid-row: 3
       grid-column: 1
