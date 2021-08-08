@@ -188,6 +188,16 @@
     &__button
       width: 130px
 
+  .footer
+    &__main
+      flex-direction: column
+    &__first
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      margin-bottom: 30px
+
 @media (max-width: 768px)
   .container
     max-width: 560px
@@ -581,6 +591,24 @@
       width: 130px
     &__form
       width: 447px
+    
+  .footer
+    &__main
+      align-items: center 
+    &__logo
+      margin-bottom: 0px
+    &__first
+      width: 80%  
+    &__second
+      flex-wrap: wrap
+      max-width: 80%
+      min-height: 600px
+    &__product, &__services, &__company, &__more
+      flex-basis: 50%
+    &__info, &__bottom
+      display: none
+    &__title, &__item
+      text-align: center   
 
 @media (max-width: 576px)
   .book
@@ -829,6 +857,34 @@
       height: 112px
       padding: 2px 10px 55px 48px
 
+  .footer
+    padding-top: 50px
+    padding-bottom: 0px
+    &__logo
+      margin-bottom: 20px
+    &__main
+      flex-direction: column-reverse
+    &__first
+      flex-direction: column
+      width: 100%
+    &__second
+      max-width: 100%
+      min-height: 445px
+    &__info
+      display: block
+      text-align: center
+      margin-bottom: 16px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__item
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+      text-align: left
+    &__title
+      text-align: left
   
   .icon
     &-email
