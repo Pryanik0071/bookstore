@@ -859,14 +859,16 @@
 
   .footer
     padding-top: 50px
-    padding-bottom: 0px
+    padding-bottom: 64px
     &__logo
       margin-bottom: 20px
     &__main
       flex-direction: column-reverse
+      margin-bottom: 0px
     &__first
       flex-direction: column
       width: 100%
+      margin-bottom: 0px
     &__second
       max-width: 100%
       min-height: 445px
@@ -892,3 +894,15 @@
         top: 20px
         left: 20px
         transform: translateY(0%)
+
+  .modal
+    &__dialog
+      width: 90%
+      padding-left: 20px 
+      padding-right: 20px
+    &__send
+      &-wrapper
+        flex-direction: column-reverse
+        align-items: start
+    &__info
+      margin-bottom: 15px

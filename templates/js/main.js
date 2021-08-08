@@ -72,25 +72,15 @@ $(document).ready(function () {
           required: true,
           minlength: 18,
         },
-        phone: {
-          required: true,
-          minlength: 18,
-        },
       },
       messages: {
-        "name-modal": "Name is required",
-        name: "Name is required",
+        "name-modal": "Имя обязательно",
         "phone-modal": {
-          required: "Phone is required",
-          minlength: jQuery.validator.format("Format input +7 (999) 999-99-99"),
+          required: "Телефон обязателен",
+          minlength: jQuery.validator.format("Формат: +7 (999) 999-99-99"),
         },
-        phone: {
-          required: "Phone is required",
-          minlength: jQuery.validator.format("Format input +7 (999) 999-99-99"),
-        },
-        "email-news": "Email is required",
-        "email-modal": "Email is required",
-        email: "Email is required",
+        "email-modal": "Укажите почту!",
+        email: "Укажите почту!",
       },
     });
   });
