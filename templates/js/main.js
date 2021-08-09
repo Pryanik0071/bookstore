@@ -45,18 +45,14 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
-    $("body").css("overflow", "hidden");
-    $("body").css("padding-right", "17px");
   }
 
   function closeModal(event) {
-    $("body").css("overflow", "auto");
     if (event.key === "Escape" || event.type === "click") {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
-      $("body").css("padding-right", "0");
     }
     event.preventDefault();
   }
