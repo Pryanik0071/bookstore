@@ -32,15 +32,13 @@
             <nav class="nav-wrapper">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#" onclick="return false" class="nav__link"
-                    >Рекомендации</a
-                  >
+                  <a href="#recomend" class="nav__link">Рекомендации</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" onclick="return false" class="nav__link">Книги</a>
+                  <a href="#books" class="nav__link">Книги</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" onclick="return false" class="nav__link">Блог</a>
+                  <a href="#blog" class="nav__link">Блог</a>
                 </li>
               </ul>
               <!-- /.nav__list -->
@@ -113,7 +111,7 @@
       <div class="container">
         <div class="offer-wrapper">
           <div class="recommendation">
-            <h2 class="offer__title">Рекомендации</h2>
+            <h2 class="offer__title" id="recomend">Рекомендации</h2>
             <ul class="recommendation__list">
               <li class="recommendation__item">
                 <img
@@ -607,7 +605,7 @@
     <section class="unreleased">
       <div class="container">
         <div class="unreleased-wrap">
-          <h2 class="unreleased__title">Неизданные книги</h2>
+          <h2 class="unreleased__title" id="books">Неизданные книги</h2>
           <!-- If we need navigation buttons -->
           <button class="unreleased-button unreleased-button--prev">
             <svg
@@ -1365,7 +1363,7 @@
     <section class="blog">
       <div class="container">
         <div class="blog-wrapper">
-          <h2 class="blog__title">Ehya Блог</h2>
+          <h2 class="blog__title" id="blog">Ehya Блог</h2>
           <button class="blog__all">Все Блоги</button>
           <div class="blog-main">
             <img
