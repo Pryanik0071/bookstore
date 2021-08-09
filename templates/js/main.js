@@ -36,29 +36,29 @@ $(document).ready(function () {
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
-
   closeModalButton.on("click", closeModal);
-
-  $(document).keydown(function (e) {
-    var modalIsOpen = $(".modal__dialog").hasClass("modal__dialog--visible");
-    if (e.keyCode === 27 && modalIsOpen) {
-      closeModal(e);
-    }
-  });
+  $(".modal__overlay").on("click", closeModal);
+  document.addEventListener("keyup", closeModal);
 
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    $("body").css("overflow", "hidden");
+    $("body").css("padding-right", "17px");
   }
 
   function closeModal(event) {
+    $("body").css("overflow", "auto");
+    if (event.key === "Escape" || event.type === "click") {
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+      $("body").css("padding-right", "0");
+    }
     event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass("modal__dialog--visible");
   }
 
   $('input[type="tel"]').mask("+7 (000) 000-00-00");
