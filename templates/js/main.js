@@ -79,8 +79,8 @@ $(document).ready(function () {
           required: "Телефон обязателен",
           minlength: jQuery.validator.format("Формат: +7 (999) 999-99-99"),
         },
-        "email-modal": "Укажите почту!",
-        email: "Укажите почту!",
+        "email-modal": "Укажите почту! Формат: a@a",
+        "email-subscribe": "Укажите почту! Формат: a@a",
       },
     });
   });
