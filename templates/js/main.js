@@ -187,18 +187,27 @@ $(document).ready(function () {
     });
   });
 
-  jQuery(window).scroll(function () {
-    var scroll_top = jQuery(window).scrollTop();
+  $('[data-btn="toTop"]').hide();
 
-    if (scroll_top >= 300) {
-      jQuery('[data-btn="toTop"]').addClass("to-top--fixed");
-    } else {
-      jQuery('[data-btn="toTop"]').removeClass("to-top--fixed");
-    }
-  });
+  // появление/затухание кнопки #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('[data-btn="toTop"]').fadeIn();
+      } else {
+        $('[data-btn="toTop"]').fadeOut();
+      }
+    });
 
-  jQuery('[data-btn="toTop"]').on("click", function (e) {
-    e.preventDefault();
-    jQuery("html, body").animate({ scrollTop: 0 }, 1000);
+    // при клике на ссылку плавно поднимаемся вверх
+    $('[data-btn="toTop"]').click(function () {
+      $("body,html").animate(
+        {
+          scrollTop: 0,
+        },
+        1000
+      );
+      return false;
+    });
   });
 });
